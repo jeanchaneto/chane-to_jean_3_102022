@@ -525,6 +525,7 @@ h1, h2 {
 .restaurant-card__image {
   height: 184px;
   overflow: hidden;
+  position: relative;
 }
 .restaurant-card__image > img {
   height: 100%;
@@ -535,9 +536,9 @@ h1, h2 {
      object-position: 50% 100%;
 }
 .restaurant-card__badge {
-  position: relative;
-  bottom: 90%;
-  left: 70%;
+  position: absolute;
+  top: 16px;
+  right: 16px;
   z-index: 1;
   width: 86px;
   text-align: center;
