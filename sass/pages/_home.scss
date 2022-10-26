@@ -1,11 +1,9 @@
-@use "../utils/variables";
-@use "../utils/mixins";
 
 .fonctionnement-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
     @include side-padding;
-
+    
     &__title {
         padding-bottom: 1.5rem;
     }
@@ -16,6 +14,12 @@
         grid-template-rows: auto;
         row-gap: 1rem;
         padding-left: 0.75rem;
+        @include desktop-version {
+            min-width: 22rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            column-gap: 1rem;
+        }
     }
 }
 
@@ -23,6 +27,10 @@
     background-color: $background-color-2;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    @include desktop-version {
+        border-radius: 20px;
+        margin-bottom: 2rem;
+    }
 
     &__container {
         @include side-padding;
@@ -37,4 +45,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     row-gap: 1rem;
+    @include desktop-version {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
 }

@@ -1,6 +1,9 @@
 body {
     max-width: 480px;
     margin-inline: auto;
+    @include desktop-version {
+        max-width: 1024px;
+    }
 }
 
 

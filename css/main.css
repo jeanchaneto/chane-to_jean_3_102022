@@ -360,6 +360,11 @@ body {
   max-width: 480px;
   margin-inline: auto;
 }
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 1024px;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -390,11 +395,25 @@ h1, h2 {
   row-gap: 1rem;
   padding-left: 0.75rem;
 }
+@media screen and (min-width: 992px) {
+  .fonctionnement-section__cards {
+    min-width: 22rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+}
 
 .restaurants-section {
   background-color: #F7F7F7;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+@media screen and (min-width: 992px) {
+  .restaurants-section {
+    border-radius: 20px;
+    margin-bottom: 2rem;
+  }
 }
 .restaurants-section__container {
   padding-left: 1rem;
@@ -409,6 +428,13 @@ h1, h2 {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   row-gap: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .restaurants-cards {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
 }
 
 .menu {
@@ -592,6 +618,8 @@ img[src="images/restaurants/lanote-image.jpg"] {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
   line-height: 1.5;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .footer a {
   color: #FFFFFF;
@@ -630,6 +658,12 @@ img[src="images/restaurants/lanote-image.jpg"] {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 992px) {
+  .header__location {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
 .header__location__text {
   padding-left: 1rem;
 }
@@ -637,6 +671,12 @@ img[src="images/restaurants/lanote-image.jpg"] {
   background-color: #F7F7F7;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+@media screen and (min-width: 992px) {
+  .header__calltoaction {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 .header__calltoaction__title {
   padding-left: 4rem;
