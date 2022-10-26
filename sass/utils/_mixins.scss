@@ -10,3 +10,9 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+@mixin desktop-version {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
