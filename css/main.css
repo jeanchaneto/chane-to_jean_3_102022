@@ -440,6 +440,13 @@ h1, h2 {
 .menu {
   background-color: #F7F7F7;
 }
+@media screen and (min-width: 992px) {
+  .menu {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 2rem;
+  }
+}
 .menu__title-container {
   display: flex;
   justify-content: space-between;
@@ -462,6 +469,14 @@ h1, h2 {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .menu__section {
+    display: inline-grid;
+    width: 40%;
+    min-width: 20rem;
+    padding-right: 5rem;
+  }
 }
 .menu__section__title {
   font-size: 1rem;
@@ -618,8 +633,12 @@ img[src="images/restaurants/lanote-image.jpg"] {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
   line-height: 1.5;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 }
 .footer a {
   color: #FFFFFF;
@@ -696,6 +715,11 @@ img[src="images/restaurants/lanote-image.jpg"] {
   bottom: 1.5rem;
   right: 5rem;
 }
+@media screen and (min-width: 992px) {
+  .menu__header__return-icon {
+    bottom: 3rem;
+  }
+}
 .menu__header__logo {
   width: 45%;
   margin: 0 auto;
@@ -705,4 +729,10 @@ img[src="images/restaurants/lanote-image.jpg"] {
 }
 .menu__header__image {
   width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .menu__header__image {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
