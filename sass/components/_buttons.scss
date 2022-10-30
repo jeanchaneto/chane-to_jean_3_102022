@@ -3,7 +3,7 @@
     padding: 1rem;
     border-radius: 40px;
     border: 0;
-    background: linear-gradient($secondary-colour, $primary-colour);
+    background: $main-buttons-colour;
     @include box-shadow;
     transition: all .5s;
     position: relative;

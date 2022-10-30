@@ -633,6 +633,25 @@ h1, h2 {
 }
 .restaurant-card__heart-logo {
   padding-top: 1rem;
+  position: relative;
+}
+.restaurant-card__heart-logo::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  top: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  position: absolute;
+  color: #FF79DA;
+  display: inline-block;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.restaurant-card__heart-logo:hover::after {
+  opacity: 1;
 }
 
 img[src="images/restaurants/lanote-image.jpg"] {
