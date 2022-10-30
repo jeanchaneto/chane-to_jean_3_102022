@@ -512,15 +512,30 @@ h1, h2 {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
+  position: relative;
 }
 .btn--wide {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
-.btn:hover {
-  filter: brightness(120%);
+.btn::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+  position: absolute;
+  opacity: 0;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.35);
+  transition: all 0.6s;
+}
+.btn:hover {
+  opacity: 0.75;
   cursor: pointer;
+}
+.btn:hover::after {
+  opacity: 1;
 }
 
 .fonctionnement-section__cards__card {

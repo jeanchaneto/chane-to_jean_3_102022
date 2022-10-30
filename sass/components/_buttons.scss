@@ -6,16 +6,33 @@
     background: linear-gradient($secondary-colour, $primary-colour);
     @include box-shadow;
     transition: all .5s;
+    position: relative;
 
     &--wide {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
 
-    &:hover {
-        filter: brightness(120%);
+    &::after {
+        content: "";
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 40px;
+        position: absolute;
+        opacity: 0;
         @include box-shadow--hover;
+        transition: all .6s;
+    }
+
+    &:hover {
+        opacity: 0.75;
         cursor: pointer;
+        &::after {
+            opacity: 1;
+        }
+            
     }
 
     
