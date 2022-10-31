@@ -464,6 +464,30 @@ h1, h2 {
 }
 .menu__title-container__heart-logo {
   padding-top: 0.75rem;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .menu__title-container__heart-logo {
+    right: 75%;
+  }
+}
+.menu__title-container__heart-logo::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  top: 0.75rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  position: absolute;
+  color: #9356DC;
+  display: inline-block;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.menu__title-container__heart-logo:hover::after {
+  opacity: 1;
 }
 .menu__section {
   padding-left: 1rem;
