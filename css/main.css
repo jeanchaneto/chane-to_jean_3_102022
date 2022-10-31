@@ -506,16 +506,16 @@ h1, h2 {
 
 .spinner-wrapper {
   position: fixed;
-  top: 35vh;
-  left: 35vw;
+  top: 35%;
+  left: 35%;
   z-index: 1;
   -webkit-animation: demofadeout 3s both ease-in;
           animation: demofadeout 3s both ease-in;
 }
 @media screen and (min-width: 992px) {
   .spinner-wrapper {
-    top: 42vh;
-    left: 42vw;
+    top: 42%;
+    left: 43%;
   }
 }
 
@@ -605,6 +605,43 @@ h1, h2 {
     visibility: hidden;
   }
 }
+.dish-card {
+  -webkit-animation: dish-card-animation 1s both ease-in-out;
+          animation: dish-card-animation 1s both ease-in-out;
+}
+.dish-card--1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.dish-card--2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.dish-card--3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+@-webkit-keyframes dish-card-animation {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@keyframes dish-card-animation {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
 .btn {
   color: white;
   padding: 1rem;

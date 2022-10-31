@@ -1,13 +1,13 @@
 .spinner-wrapper {
     position: fixed;
-    top: 35vh;
-    left: 35vw;
+    top: 35%;
+    left: 35%;
     z-index: 1;
     animation: demofadeout 3s both ease-in;
 
     @include desktop-version {
-        top: 42vh;
-        left: 42vw;
+        top: 42%;
+        left: 43%;
     }
 }
 
