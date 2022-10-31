@@ -506,19 +506,30 @@ h1, h2 {
 
 .spinner-wrapper {
   position: fixed;
-  top: 50vh;
-  left: 50vw;
+  top: 35vh;
+  left: 35vw;
   z-index: 1;
-  width: 100vw;
-  height: 100vh;
+  -webkit-animation: demofadeout 3s both ease-in;
+          animation: demofadeout 3s both ease-in;
+}
+@media screen and (min-width: 992px) {
+  .spinner-wrapper {
+    top: 42vh;
+    left: 42vw;
+  }
 }
 
 .loading-spinner {
   width: 100px;
   height: 100px;
   position: relative;
-  -webkit-animation: demofadeout 3s both ease-in;
-          animation: demofadeout 3s both ease-in;
+  z-index: 1;
+}
+@media screen and (min-width: 992px) {
+  .loading-spinner {
+    width: 300px;
+    height: 300px;
+  }
 }
 .loading-spinner__spin1 {
   box-sizing: border-box;
@@ -531,6 +542,11 @@ h1, h2 {
   -webkit-animation: spin1 1.2s linear infinite;
           animation: spin1 1.2s linear infinite;
 }
+@media screen and (min-width: 992px) {
+  .loading-spinner__spin1 {
+    border-width: 30px;
+  }
+}
 .loading-spinner__spin2 {
   box-sizing: border-box;
   position: absolute;
@@ -541,6 +557,11 @@ h1, h2 {
   border-bottom-color: #99E2D0;
   -webkit-animation: spin1 1.2s linear infinite;
           animation: spin1 1.2s linear infinite;
+}
+@media screen and (min-width: 992px) {
+  .loading-spinner__spin2 {
+    border-width: 30px;
+  }
 }
 
 @-webkit-keyframes spin1 {
@@ -572,6 +593,7 @@ h1, h2 {
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes demofadeout {
@@ -580,6 +602,7 @@ h1, h2 {
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 .btn {
@@ -695,7 +718,7 @@ h1, h2 {
   position: absolute;
   top: 16px;
   right: 16px;
-  z-index: 1;
+  z-index: 0.95;
   width: 86px;
   text-align: center;
   padding: 0.25rem;
