@@ -504,10 +504,22 @@ h1, h2 {
   text-align: center;
 }
 
+.spinner-wrapper {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
 .loading-spinner {
   width: 100px;
   height: 100px;
   position: relative;
+  -webkit-animation: demofadeout 3s both;
+          animation: demofadeout 3s both;
 }
 .loading-spinner__spin1 {
   box-sizing: border-box;
@@ -553,6 +565,22 @@ h1, h2 {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes demofadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes demofadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .btn {

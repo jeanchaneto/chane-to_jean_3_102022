@@ -1,7 +1,19 @@
+.spinner-wrapper {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
 .loading-spinner {
     width: 100px;
     height: 100px;
     position: relative;
+    animation: demofadeout 3s both;
 
     &__spin1 {
         box-sizing: border-box;
@@ -22,12 +34,31 @@
         border: 10px solid transparent;
         border-radius: 50%;
         border-bottom-color: $primary-colour;
-        animation: spin1 1.2s linear infinite; 
+        animation: spin1 1.2s linear infinite;
     }
 }
 
 @keyframes spin1 {
-    0% { transform: rotate(0); }
-    50% { transform: rotate(180deg);}
-    100% { transform: rotate(360deg);}
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes demofadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
