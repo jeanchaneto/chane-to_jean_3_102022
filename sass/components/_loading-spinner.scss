@@ -1,19 +1,17 @@
 .spinner-wrapper {
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
     z-index: 1;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-
 }
 
 .loading-spinner {
     width: 100px;
     height: 100px;
     position: relative;
-    animation: demofadeout 3s both;
+    animation: demofadeout 3s both ease-in;
 
     &__spin1 {
         box-sizing: border-box;
@@ -22,7 +20,7 @@
         height: 100%;
         border: 10px solid transparent;
         border-radius: 50%;
-        border-top-color: $primary-colour;
+        border-top-color: $secondary-colour;
         animation: spin1 1.2s linear infinite;
     }
 
@@ -33,7 +31,7 @@
         height: 100%;
         border: 10px solid transparent;
         border-radius: 50%;
-        border-bottom-color: $primary-colour;
+        border-bottom-color: $tertiary-colour;
         animation: spin1 1.2s linear infinite;
     }
 }

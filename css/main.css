@@ -505,21 +505,20 @@ h1, h2 {
 }
 
 .spinner-wrapper {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
 }
 
 .loading-spinner {
   width: 100px;
   height: 100px;
   position: relative;
-  -webkit-animation: demofadeout 3s both;
-          animation: demofadeout 3s both;
+  -webkit-animation: demofadeout 3s both ease-in;
+          animation: demofadeout 3s both ease-in;
 }
 .loading-spinner__spin1 {
   box-sizing: border-box;
@@ -528,7 +527,7 @@ h1, h2 {
   height: 100%;
   border: 10px solid transparent;
   border-radius: 50%;
-  border-top-color: #9356DC;
+  border-top-color: #FF79DA;
   -webkit-animation: spin1 1.2s linear infinite;
           animation: spin1 1.2s linear infinite;
 }
@@ -539,7 +538,7 @@ h1, h2 {
   height: 100%;
   border: 10px solid transparent;
   border-radius: 50%;
-  border-bottom-color: #9356DC;
+  border-bottom-color: #99E2D0;
   -webkit-animation: spin1 1.2s linear infinite;
           animation: spin1 1.2s linear infinite;
 }
