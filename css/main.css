@@ -645,6 +645,7 @@ h1, h2 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
+
 @-webkit-keyframes dish-card-animation {
   0% {
     transform: translateY(1rem);
@@ -655,6 +656,7 @@ h1, h2 {
     opacity: 1;
   }
 }
+
 @keyframes dish-card-animation {
   0% {
     transform: translateY(1rem);
@@ -665,7 +667,38 @@ h1, h2 {
     opacity: 1;
   }
 }
-
+@-webkit-keyframes check-icon-wrapper-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes check-icon-wrapper-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes check-icon-animation {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes check-icon-animation {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .btn {
   color: white;
   padding: 1rem;
@@ -828,6 +861,8 @@ img[src="images/restaurants/lanote-image.jpg"] {
   height: 3.5rem;
   padding-left: 0.5rem;
   padding-top: 0.75rem;
+  overflow: hidden;
+  position: relative;
 }
 .dish-card__title {
   font-weight: 500;
@@ -843,6 +878,40 @@ img[src="images/restaurants/lanote-image.jpg"] {
 .dish-card__body__price {
   font-weight: 500;
   padding-right: 1.5rem;
+  transition: 0.6s;
+}
+.dish-card__check-icon--wrapper {
+  background-color: #99E2D0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  transform: translateX(100%);
+}
+.dish-card__check-icon {
+  color: #99E2D0;
+  background-color: #FFFFFF;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.25rem;
+  border-radius: 50%;
+  margin-top: 25%;
+}
+.dish-card:hover {
+  cursor: pointer;
+}
+.dish-card:hover .dish-card__body__price {
+  transform: translateX(-125%);
+}
+.dish-card:hover .dish-card__check-icon--wrapper {
+  -webkit-animation: check-icon-wrapper-animation 0.6s both;
+          animation: check-icon-wrapper-animation 0.6s both;
+}
+.dish-card:hover .dish-card__check-icon {
+  -webkit-animation: check-icon-animation 0.5s 0.2s both;
+          animation: check-icon-animation 0.5s 0.2s both;
 }
 
 .footer {

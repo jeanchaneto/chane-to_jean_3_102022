@@ -1,16 +1,37 @@
-
 // Dish Card Progressive Display Animation
 
 .dish-card {
-animation: dish-card-animation 1s both ease-in-out;
-@for $i from 1 through 3 {
-    &--#{$i} {
-        animation-delay: 0.1s * $i;
+    animation: dish-card-animation 1s both ease-in-out;
+
+    @for $i from 1 through 3 {
+        &--#{$i} {
+            animation-delay: 0.1s * $i;
+        }
     }
+
+    
 }
 
 @keyframes dish-card-animation {
-    0% { transform: translateY(1rem); opacity: 0;}
-    100% {transform: translateY(0rem); opacity: 1;}
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
 }
+
+// Dish Card Hover/Click Animation
+
+@keyframes check-icon-wrapper-animation {
+    0% {transform: translateX(100%)}
+    100% {transform: translateX(0%)}
+}
+
+@keyframes check-icon-animation {
+    0% {transform: rotate(-270deg);}
+    100% {transform: rotate(0deg);}
 }

@@ -109,7 +109,7 @@
     &__heart-logo {
         padding-top: 1rem;
         position: relative;
-        
+
         &::after {
             content: "\f004";
             font-family: "Font Awesome 5 Free";
@@ -145,6 +145,8 @@ img[src="images/restaurants/lanote-image.jpg"] {
     height: 3.5rem;
     padding-left: 0.5rem;
     padding-top: 0.75rem;
+    overflow: hidden;
+    position: relative;
 
     &__title {
         font-weight: $bolder-font-weight;
@@ -162,6 +164,47 @@ img[src="images/restaurants/lanote-image.jpg"] {
         &__price {
             font-weight: $bolder-font-weight;
             padding-right: 1.5rem;
+            transition: 0.6s;
         }
     }
+
+    &__check-icon--wrapper {
+        background-color: $tertiary-colour;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20%;
+        height: 100%;
+        text-align: center;
+        transform: translateX(100%);
+
+    }
+
+    &__check-icon {
+        color: $tertiary-colour;
+        background-color: $background-colour-1;
+        width: 1rem;
+        height: 1rem;
+        padding: 0.25rem;
+        border-radius: 50%;
+        margin-top: 25%;
+
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover .dish-card__body__price {
+        transform: translateX(-125%);
+    }
+
+    &:hover .dish-card__check-icon--wrapper {
+        animation: check-icon-wrapper-animation 0.6s both;
+    }
+
+    &:hover .dish-card__check-icon {
+        animation: check-icon-animation 0.5s 0.2s both;
+    }
+
 }
