@@ -530,16 +530,17 @@ h1, h2 {
 
 .spinner-wrapper {
   position: fixed;
-  top: 35%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
   z-index: 1;
+  transform: translate(-50%, -50%);
   -webkit-animation: demofadeout 3s both ease-in;
           animation: demofadeout 3s both ease-in;
 }
 @media screen and (min-width: 992px) {
   .spinner-wrapper {
-    top: 42%;
-    left: 43%;
+    top: 50%;
+    left: 50%;
   }
 }
 
@@ -931,7 +932,8 @@ img[src="images/restaurants/lanote-image.jpg"] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: all 1s;
+  transition: all 0.6s;
+  width: 100%;
 }
 .dish-card__body__price {
   font-weight: 500;

@@ -238,7 +238,8 @@ img[src="images/restaurants/lanote-image.jpg"] {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            transition: all 1s;
+            transition: all 0.6s;
+            width: 100%;
         }
 
         &__price {
