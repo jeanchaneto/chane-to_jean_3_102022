@@ -2,7 +2,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 1;
+    z-index: 2;
     transform: translate(-50%, -50%);
     animation: demofadeout 3s both ease-in;
 
@@ -16,7 +16,7 @@
     width: 100px;
     height: 100px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     @include desktop-version {
         width: 300px;

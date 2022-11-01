@@ -3,7 +3,7 @@
 .dish-card {
     animation: dish-card-animation 1s both ease-in-out;
 
-    @for $i from 1 through 3 {
+    @for $i from 1 through 4 {
         &--#{$i} {
             animation-delay: 0.1s * $i;
         }

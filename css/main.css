@@ -468,7 +468,7 @@ h1, h2 {
 }
 @media screen and (min-width: 992px) {
   .menu__title-container__heart-logo {
-    right: 75%;
+    right: 65%;
   }
 }
 .menu__title-container__heart-logo::after {
@@ -532,7 +532,7 @@ h1, h2 {
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 1;
+  z-index: 2;
   transform: translate(-50%, -50%);
   -webkit-animation: demofadeout 3s both ease-in;
           animation: demofadeout 3s both ease-in;
@@ -548,7 +548,7 @@ h1, h2 {
   width: 100px;
   height: 100px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 @media screen and (min-width: 992px) {
   .loading-spinner {
@@ -645,6 +645,10 @@ h1, h2 {
 .dish-card--3 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
+}
+.dish-card--4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 @-webkit-keyframes dish-card-animation {
@@ -867,7 +871,7 @@ h1, h2 {
   position: absolute;
   top: 16px;
   right: 16px;
-  z-index: 0.95;
+  z-index: 1;
   width: 86px;
   text-align: center;
   padding: 0.25rem;

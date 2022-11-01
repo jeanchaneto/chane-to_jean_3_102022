@@ -27,7 +27,7 @@
             padding-top: 0.75rem;
             position: relative;
             @include desktop-version {
-                right: 75%;
+                right: 65%;
             }
         
             &::after {
@@ -96,7 +96,5 @@ padding-right: 5rem;
         text-align: center;
 
     }
-
-
 
 }

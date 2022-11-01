@@ -139,10 +139,6 @@
     }
 }
 
-
-
-
-
 .restaurant-card {
     height: 250px;
     border-radius: 20px;
@@ -166,7 +162,7 @@
         position: absolute;
         top: 16px;
         right: 16px;
-        z-index: 0.95;
+        z-index: 1;
         width: 86px;
         text-align: center;
         padding: 0.25rem;
