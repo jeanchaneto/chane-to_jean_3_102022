@@ -787,9 +787,6 @@ h1, h2 {
 .fonctionnement-section__cards__card:hover::after {
   opacity: 1;
 }
-.fonctionnement-section__cards__card:hover__icon--mobile::after {
-  opacity: 1;
-}
 
 .fonctionnement-section__cards__card__icon--mobile::after {
   content: "\f3cf";
