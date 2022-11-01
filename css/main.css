@@ -922,6 +922,11 @@ img[src="images/restaurants/lanote-image.jpg"] {
 }
 .dish-card__title {
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.6s;
+  width: 100%;
 }
 .dish-card__body {
   display: flex;
@@ -966,12 +971,20 @@ img[src="images/restaurants/lanote-image.jpg"] {
 .dish-card:hover .dish-card__body__price {
   transform: translateX(-125%);
 }
+.dish-card:hover .dish-card__title {
+  width: 80%;
+}
+@media screen and (min-width: 992px) {
+  .dish-card:hover .dish-card__title {
+    width: 100%;
+  }
+}
 .dish-card:hover .dish-card__body__byline {
   width: 60%;
 }
 @media screen and (min-width: 992px) {
   .dish-card:hover .dish-card__body__byline {
-    width: 100%;
+    width: 70%;
   }
 }
 .dish-card:hover .dish-card__check-icon--wrapper {

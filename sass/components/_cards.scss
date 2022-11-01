@@ -217,6 +217,11 @@ img[src="images/restaurants/lanote-image.jpg"] {
 
     &__title {
         font-weight: $bolder-font-weight;
+        overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            transition: all 0.6s;
+            width: 100%;
     }
 
     &__body {
@@ -269,11 +274,19 @@ img[src="images/restaurants/lanote-image.jpg"] {
         transform: translateX(-125%);
     }
 
+    &:hover .dish-card__title {
+        width: 80%;
+
+        @include desktop-version {
+            width: 100%;
+        }
+    }
+
     &:hover .dish-card__body__byline {
         width: 60%;
 
         @include desktop-version {
-            width: 100%;
+            width: 70%;
         }
     }
 

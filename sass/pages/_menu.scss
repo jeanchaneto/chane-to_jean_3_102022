@@ -20,16 +20,17 @@
 
         &__title {
             font-family: $logo-title-font;
-            font-size: 1.5rem;  
+            font-size: 1.5rem;
         }
 
         &__heart-logo {
             padding-top: 0.75rem;
             position: relative;
+
             @include desktop-version {
                 right: 65%;
             }
-        
+
             &::after {
                 content: "\f004";
                 font-family: "Font Awesome 5 Free";
@@ -45,7 +46,7 @@
                 opacity: 0;
                 transition: all 0.5s;
             }
-    
+
             &:hover::after {
                 opacity: 1;
             }
@@ -56,12 +57,13 @@
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 2rem;
+
         @include desktop-version {
-display: inline-grid;
-width: 40%;
-min-width: 20rem;
-padding-right: 5rem;
-}
+            display: inline-grid;
+            width: 40%;
+            min-width: 20rem;
+            padding-right: 5rem;
+        }
 
 
         &__title {
