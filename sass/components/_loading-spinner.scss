@@ -4,7 +4,7 @@
     left: 50%;
     z-index: 2;
     transform: translate(-50%, -50%);
-    animation: demofadeout 3s both ease-in;
+    animation: demofadeout 2s both ease-in;
 
     @include desktop-version {
         top: 50%;
@@ -77,4 +77,19 @@
         opacity: 0;
         visibility: hidden;
     }
+}
+
+@keyframes loadinghider {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+.index__header, .index__main , .index__footer {
+animation: loadinghider 0.5s 2s both ease-in;
 }

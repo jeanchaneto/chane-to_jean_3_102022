@@ -78,7 +78,7 @@
 
 }
 
-.fonctionnement-section__cards__card--1:hover{
+.fonctionnement-section__cards__card--1:hover {
     .fonctionnement-section__cards__card__icon--mobile::after {
         opacity: 1;
     }
@@ -103,7 +103,7 @@
 
 }
 
-.fonctionnement-section__cards__card--2:hover{
+.fonctionnement-section__cards__card--2:hover {
     .fonctionnement-section__cards__card__icon--bars::after {
         opacity: 1;
     }
@@ -128,7 +128,7 @@
 
 }
 
-.fonctionnement-section__cards__card--3:hover{
+.fonctionnement-section__cards__card--3:hover {
     .fonctionnement-section__cards__card__icon--store::after {
         opacity: 1;
     }
@@ -141,7 +141,7 @@
     overflow: hidden;
 
     &__image {
-        height: 184px;
+        height: 180px;
         overflow: hidden;
         position: relative;
 
@@ -170,7 +170,12 @@
         padding-top: 1rem;
         padding-left: 1rem;
         padding-right: 2rem;
+        padding-bottom: 0.5rem;
         justify-content: space-between;
+    }
+
+    &__byline {
+        line-height: 1.5;
     }
 
     &__heart-logo {
@@ -218,10 +223,10 @@ img[src="images/restaurants/lanote-image.jpg"] {
     &__title {
         font-weight: $bolder-font-weight;
         overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            transition: all 0.6s;
-            width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        transition: all 0.6s;
+        width: 100%;
     }
 
     &__body {
@@ -254,6 +259,8 @@ img[src="images/restaurants/lanote-image.jpg"] {
         height: 100%;
         text-align: center;
         transform: translateX(100%);
+        display: flex;
+        justify-content: center;
     }
 
     &__check-icon {
@@ -263,7 +270,7 @@ img[src="images/restaurants/lanote-image.jpg"] {
         height: 1rem;
         padding: 0.25rem;
         border-radius: 50%;
-        margin-top: 25%;
+        align-self: center;
     }
 
     &:hover {
